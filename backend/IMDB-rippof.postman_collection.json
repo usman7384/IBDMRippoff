@@ -1,0 +1,2841 @@
+{
+	"info": {
+		"_postman_id": "5606b1d0-4a5b-4401-85d1-153bfeaddf18",
+		"name": "IMDB-rippof",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31616266"
+	},
+	"item": [
+		{
+			"name": "Register User/Sign Up",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "usman",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "usman@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "password123",
+							"type": "text"
+						},
+						{
+							"key": "",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/user/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"user",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Register User/Sign Up",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "usman",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "usman@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "password123",
+									"type": "text"
+								},
+								{
+									"key": "",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/user/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"user",
+								""
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Security-Policy",
+							"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Resource-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Origin-Agent-Cluster",
+							"value": "?1"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "no-referrer"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=15552000; includeSubDomains"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-DNS-Prefetch-Control",
+							"value": "off"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "854"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"356-qcWRpKXvmYlOHtd7GnZc1fv6b8w\""
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "connect.sid=s%3ADv7vInKJji4Oe5xm96IV9JJ-eJPS0XQC.3HZn0tI7xjofXE4yqmFDXZjxRgff6C2ptJNM6YxaWKc; Path=/; Expires=Wed, 01 May 2024 20:01:15 GMT; HttpOnly"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 01 May 2024 19:01:15 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"user\": {\n        \"name\": \"usman\",\n        \"email\": \"usman@gmail.com\",\n        \"password\": \"$2a$08$XaXP/GpqsSMOMyiXrQHVh.F/idHnh/k/9sYMLgy4LvPO90qgSkGYa\",\n        \"_id\": \"6632917b908871183c907207\",\n        \"createdAt\": \"2024-05-01T19:01:15.662Z\",\n        \"updatedAt\": \"2024-05-01T19:01:15.662Z\",\n        \"__v\": 0\n    },\n    \"tokens\": {\n        \"access\": {\n            \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2NjMyOTE3YjkwODg3MTE4M2M5MDcyMDciLCJpYXQiOjE3MTQ1OTAwNzUsImV4cCI6MTcxNDU5NTQ3NSwidHlwZSI6ImFjY2VzcyJ9.cAOtmeVqzwIGfPX84MPA4xn6cMGiwBpyV3yLIBPDtms\",\n            \"expires\": \"2024-05-01T20:31:15.807Z\",\n            \"uuid\": \"2161ee1c-4c74-4215-80f9-b699522131e4\"\n        },\n        \"refresh\": {\n            \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2NjMyOTE3YjkwODg3MTE4M2M5MDcyMDciLCJpYXQiOjE3MTQ1OTAwNzUsImV4cCI6MTcxNDY5ODA3NSwidHlwZSI6InJlZnJlc2gifQ.Jng7Q0jSZUHDYqqGxi0-_-XrDioZrogP9VDFSFh_8v8\",\n            \"expires\": \"2024-05-03T01:01:15.808Z\",\n            \"uuid\": \"2161ee1c-4c74-4215-80f9-b699522131e4\"\n        }\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Login",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Response status code is 200\", function () {",
+							"  pm.expect(pm.response.code).to.equal(200);",
+							"});",
+							"",
+							"",
+							"pm.test(\"Content-Type header is set to application/json\", function () {",
+							"  pm.expect(pm.response.headers.get(\"Content-Type\")).to.include(\"application/json\");",
+							"});",
+							"",
+							"",
+							"pm.test(\"Tokens object has the required fields - access, refresh\", function () {",
+							"  const responseData = pm.response.json();",
+							"  ",
+							"  pm.expect(responseData.tokens).to.be.an('object');",
+							"  pm.expect(responseData.tokens.access).to.exist;",
+							"  pm.expect(responseData.tokens.refresh).to.exist;",
+							"});",
+							"",
+							"",
+							"pm.test(\"Access token is not empty\", function () {",
+							"  const responseData = pm.response.json();",
+							"  ",
+							"  pm.expect(responseData.tokens.access.token).to.exist.and.to.not.be.empty;",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "usman@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "password123",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/user/login",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"user",
+						"login"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Login",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "email",
+									"value": "usman@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "password123",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/user/login",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"user",
+								"login"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Security-Policy",
+							"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Resource-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Origin-Agent-Cluster",
+							"value": "?1"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "no-referrer"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=15552000; includeSubDomains"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-DNS-Prefetch-Control",
+							"value": "off"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "854"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"356-6HwaJqpPJSvFBBLQ225Yq/ylsZ4\""
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "connect.sid=s%3AaQYTCmct_zInA-VYS5AK9q612aabcKjm.%2Bwk4ekfJlpkhayWLMIfntYBhH%2Fp%2BeLr4haAvLLn7prc; Path=/; Expires=Wed, 01 May 2024 20:03:38 GMT; HttpOnly"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 01 May 2024 19:03:38 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"user\": {\n        \"_id\": \"6632917b908871183c907207\",\n        \"name\": \"usman\",\n        \"email\": \"usman@gmail.com\",\n        \"password\": \"$2a$08$XaXP/GpqsSMOMyiXrQHVh.F/idHnh/k/9sYMLgy4LvPO90qgSkGYa\",\n        \"createdAt\": \"2024-05-01T19:01:15.662Z\",\n        \"updatedAt\": \"2024-05-01T19:01:15.662Z\",\n        \"__v\": 0\n    },\n    \"tokens\": {\n        \"access\": {\n            \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2NjMyOTE3YjkwODg3MTE4M2M5MDcyMDciLCJpYXQiOjE3MTQ1OTAyMTgsImV4cCI6MTcxNDU5NTYxOCwidHlwZSI6ImFjY2VzcyJ9.dbTtEAeTGF1io9hnapZtCvkFTgWISTGh_FITQSoweys\",\n            \"expires\": \"2024-05-01T20:33:38.875Z\",\n            \"uuid\": \"99a81f89-27a1-4ef8-927c-a3effe516f89\"\n        },\n        \"refresh\": {\n            \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2NjMyOTE3YjkwODg3MTE4M2M5MDcyMDciLCJpYXQiOjE3MTQ1OTAyMTgsImV4cCI6MTcxNDY5ODIxOCwidHlwZSI6InJlZnJlc2gifQ.7XS-172RQ1xe_ai3Jg9B-xhkTzxGkoBNbHIXUSE1cJM\",\n            \"expires\": \"2024-05-03T01:03:38.876Z\",\n            \"uuid\": \"99a81f89-27a1-4ef8-927c-a3effe516f89\"\n        }\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Add new Movie",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Response status code is 201\", function () {",
+							"  pm.expect(pm.response.code).to.equal(201);",
+							"});",
+							"",
+							"",
+							"pm.test(\"Name is a non-empty string\", function () {",
+							"  const responseData = pm.response.json();",
+							"  ",
+							"  pm.expect(responseData).to.be.an('object');",
+							"  pm.expect(responseData.name).to.be.a('string').and.to.have.lengthOf.at.least(1, \"Value should not be empty\");",
+							"});",
+							"",
+							"",
+							"pm.test(\"Genre is a non-empty string\", function () {",
+							"  const responseData = pm.response.json();",
+							"  ",
+							"  pm.expect(responseData).to.be.an('object');",
+							"  pm.expect(responseData.genere).to.exist.and.to.be.a('string').and.to.have.lengthOf.at.least(1, \"Value should not be empty\");",
+							"});",
+							"",
+							"",
+							"pm.test(\"Rating is a number between 0 and 10\", function () {",
+							"    const responseData = pm.response.json();",
+							"",
+							"    pm.expect(responseData.rating).to.be.a('number');",
+							"    pm.expect(responseData.rating).to.be.at.least(0, \"Rating should be greater than or equal to 0\");",
+							"    pm.expect(responseData.rating).to.be.at.most(10, \"Rating should be less than or equal to 10\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2NjM1NWE0OTMxYzAxODAxNDQwZDI0ZTIiLCJpYXQiOjE3MTQ4MDc0OTQsImV4cCI6MTcxNDgxMjg5NCwidHlwZSI6ImFjY2VzcyJ9.JxiiDrc6a9mzpuM_dSgdybHFlE2Lh5X4Zfv6OHegptE",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Horror Movie It is 66666",
+							"type": "text"
+						},
+						{
+							"key": "genere",
+							"value": "Horror",
+							"type": "text"
+						},
+						{
+							"key": "rating",
+							"value": "9",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "Very Scary Movie",
+							"type": "text"
+						},
+						{
+							"key": "photoPath",
+							"type": "file",
+							"src": "daisy.jpeg"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/movies/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"movies",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Add new Movie",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Horror Movie It is",
+									"type": "text"
+								},
+								{
+									"key": "genere",
+									"value": "Horror",
+									"type": "text"
+								},
+								{
+									"key": "rating",
+									"value": "9",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "Very Scary Movie",
+									"type": "text"
+								},
+								{
+									"key": "photoPath",
+									"type": "file",
+									"src": "daisy.jpeg"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/movies/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"movies",
+								""
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Security-Policy",
+							"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Resource-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Origin-Agent-Cluster",
+							"value": "?1"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "no-referrer"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=15552000; includeSubDomains"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-DNS-Prefetch-Control",
+							"value": "off"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "253"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"fd-3YpKyalhqzh2QCVw1W3vEEP46Cs\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 01 May 2024 21:29:50 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"name\": \"Horror Movie It is\",\n    \"genere\": \"Horror\",\n    \"rating\": 9,\n    \"photoPath\": \"photoPath-1714598990185.jpeg\",\n    \"description\": \"Very Scary Movie\",\n    \"_id\": \"6632b44ee931678f2761e757\",\n    \"createdAt\": \"2024-05-01T21:29:50.325Z\",\n    \"updatedAt\": \"2024-05-01T21:29:50.325Z\",\n    \"__v\": 0\n}"
+				}
+			]
+		},
+		{
+			"name": "Get All Movies",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Response status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"",
+							"pm.test(\"Response has the required fields - totalResults and movies\", function () {",
+							"  const responseData = pm.response.json();",
+							"  ",
+							"  pm.expect(responseData).to.be.an('object');",
+							"  pm.expect(responseData.totalResults).to.exist;",
+							"  pm.expect(responseData.movies).to.exist;",
+							"});",
+							"",
+							"",
+							"pm.test(\"TotalResults is a non-negative integer\", function () {",
+							"    const responseData = pm.response.json();",
+							"",
+							"    pm.expect(responseData.totalResults).to.be.a('number');",
+							"    pm.expect(responseData.totalResults).to.be.at.least(0, \"TotalResults should be non-negative\");",
+							"});",
+							"",
+							"",
+							"pm.test(\"Movies is an array\", function () {",
+							"    const responseData = pm.response.json();",
+							"    ",
+							"    pm.expect(responseData.movies).to.be.an('array');",
+							"});",
+							"",
+							"",
+							"pm.test(\"Movies array is empty\", function () {",
+							"  const responseData = pm.response.json();",
+							"  ",
+							"  pm.expect(responseData.movies).to.be.an('array').that.is.empty;",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/movies?page=10&limit=1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"movies"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "10"
+						},
+						{
+							"key": "limit",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get All Movies",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/movies",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"movies"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Security-Policy",
+							"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Resource-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Origin-Agent-Cluster",
+							"value": "?1"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "no-referrer"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=15552000; includeSubDomains"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-DNS-Prefetch-Control",
+							"value": "off"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "569"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"239-OLNcba53hxW2gXbq5LrVU90FPRA\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 01 May 2024 21:31:04 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"results\": [\n        {\n            \"_id\": \"6632b44ee931678f2761e757\",\n            \"name\": \"Horror Movie It is\",\n            \"genere\": \"Horror\",\n            \"rating\": 9,\n            \"photoPath\": \"photoPath-1714598990185.jpeg\",\n            \"description\": \"Very Scary Movie\",\n            \"createdAt\": \"2024-05-01T21:29:50.325Z\",\n            \"updatedAt\": \"2024-05-01T21:29:50.325Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"6632b395e931678f2761e74e\",\n            \"name\": \"Horror Movie\",\n            \"genere\": \"Horror\",\n            \"rating\": 9,\n            \"photoPath\": \"photoPath-1714598805212.jpeg\",\n            \"description\": \"Very Scary Movie\",\n            \"createdAt\": \"2024-05-01T21:26:45.360Z\",\n            \"updatedAt\": \"2024-05-01T21:26:45.360Z\",\n            \"__v\": 0\n        }\n    ],\n    \"page\": 1,\n    \"limit\": 5000,\n    \"totalPages\": 1,\n    \"totalResults\": 2\n}"
+				}
+			]
+		},
+		{
+			"name": "Get Movie By Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/movies/6632b44ee931678f2761e757",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"movies",
+						"6632b44ee931678f2761e757"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get Movie By Id",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/movies/6632b44ee931678f2761e757",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"movies",
+								"6632b44ee931678f2761e757"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Security-Policy",
+							"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Resource-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Origin-Agent-Cluster",
+							"value": "?1"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "no-referrer"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=15552000; includeSubDomains"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-DNS-Prefetch-Control",
+							"value": "off"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "253"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"fd-RqlOPqPlN1pcTOmbxXZSQkERfhw\""
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "connect.sid=s%3APz0zd3mFuqLtZ6pkEqDiQWplZepjIvCZ.SHL4sBm30ri8sgbKnQsZ8p6ef5LnH1Ymjs00pJxP5dE; Path=/; Expires=Wed, 01 May 2024 22:31:58 GMT; HttpOnly"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 01 May 2024 21:31:58 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"_id\": \"6632b44ee931678f2761e757\",\n    \"name\": \"Horror Movie It is\",\n    \"genere\": \"Horror\",\n    \"rating\": 9,\n    \"photoPath\": \"photoPath-1714598990185.jpeg\",\n    \"description\": \"Very Scary Movie\",\n    \"createdAt\": \"2024-05-01T21:29:50.325Z\",\n    \"updatedAt\": \"2024-05-01T21:29:50.325Z\",\n    \"__v\": 0\n}"
+				},
+				{
+					"name": "Get Movie By Id",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/movies/6632ba5d6df34bf42cbe6a29",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"movies",
+								"6632ba5d6df34bf42cbe6a29"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Security-Policy",
+							"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Resource-Policy",
+							"value": "cross-origin"
+						},
+						{
+							"key": "Origin-Agent-Cluster",
+							"value": "?1"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "no-referrer"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=15552000; includeSubDomains"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-DNS-Prefetch-Control",
+							"value": "off"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1213"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"4bd-m1HjXBhDUbchm73E3g3Mble65J4\""
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "connect.sid=s%3ALyMlDHfaWAY_7RJkH08SNaRQbK4Fj401.nFF7YVxz0o2kjL84bToaDz%2FoZZmjQyihQ6Hd2zv%2FDzs; Path=/; Expires=Fri, 03 May 2024 12:01:19 GMT; HttpOnly"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 03 May 2024 11:01:19 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"movie\": {\n        \"_id\": \"6632ba5d6df34bf42cbe6a29\",\n        \"name\": \"Horror Movie It is 2\",\n        \"genere\": \"Horror\",\n        \"rating\": 9,\n        \"photoPath\": \"photoPath-1714600541786.jpeg\",\n        \"description\": \"Very Scary Movie\",\n        \"createdAt\": \"2024-05-01T21:55:41.925Z\",\n        \"updatedAt\": \"2024-05-01T21:55:41.925Z\",\n        \"__v\": 0\n    },\n    \"reviews\": [\n        {\n            \"_id\": \"6632c782328c5bca6a9393d8\",\n            \"description\": \"very good movie 2\",\n            \"stars\": 5,\n            \"user\": \"6632917b908871183c907207\",\n            \"movie\": \"6632ba5d6df34bf42cbe6a29\",\n            \"createdAt\": \"2024-05-01T22:51:46.147Z\",\n            \"updatedAt\": \"2024-05-01T22:51:46.147Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"6632c783328c5bca6a9393db\",\n            \"description\": \"very good movie 2\",\n            \"stars\": 5,\n            \"user\": \"6632917b908871183c907207\",\n            \"movie\": \"6632ba5d6df34bf42cbe6a29\",\n            \"createdAt\": \"2024-05-01T22:51:47.370Z\",\n            \"updatedAt\": \"2024-05-01T22:51:47.370Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"6632c784328c5bca6a9393de\",\n            \"description\": \"very good movie 2\",\n            \"stars\": 5,\n            \"user\": \"6632917b908871183c907207\",\n            \"movie\": \"6632ba5d6df34bf42cbe6a29\",\n            \"createdAt\": \"2024-05-01T22:51:48.562Z\",\n            \"updatedAt\": \"2024-05-01T22:51:48.562Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"6634bf624f1b0723b8a6a2ae\",\n            \"description\": \"very good movie 4\",\n            \"stars\": 3,\n            \"user\": \"6632b5a2929595062d1bed70\",\n            \"movie\": \"6632ba5d6df34bf42cbe6a29\",\n            \"createdAt\": \"2024-05-03T10:41:38.882Z\",\n            \"updatedAt\": \"2024-05-03T10:41:38.882Z\",\n            \"__v\": 0\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "Update Movie",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2NjM1NWE0OTMxYzAxODAxNDQwZDI0ZTIiLCJpYXQiOjE3MTQ4MDc0OTQsImV4cCI6MTcxNDgxMjg5NCwidHlwZSI6ImFjY2VzcyJ9.JxiiDrc6a9mzpuM_dSgdybHFlE2Lh5X4Zfv6OHegptE",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Horror Movie",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/movies/6632b44ee931678f2761e757",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"movies",
+						"6632b44ee931678f2761e757"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Update Movie",
+					"originalRequest": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Horror Movie",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/movies/6632b44ee931678f2761e757",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"movies",
+								"6632b44ee931678f2761e757"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Security-Policy",
+							"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Resource-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Origin-Agent-Cluster",
+							"value": "?1"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "no-referrer"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=15552000; includeSubDomains"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-DNS-Prefetch-Control",
+							"value": "off"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "247"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"f7-iMCJbq2d6KAoYHexg0m9XYEyWwY\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 01 May 2024 21:37:59 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"_id\": \"6632b44ee931678f2761e757\",\n    \"name\": \"Horror Movie\",\n    \"genere\": \"Horror\",\n    \"rating\": 9,\n    \"photoPath\": \"photoPath-1714598990185.jpeg\",\n    \"description\": \"Very Scary Movie\",\n    \"createdAt\": \"2024-05-01T21:29:50.325Z\",\n    \"updatedAt\": \"2024-05-01T21:37:59.489Z\",\n    \"__v\": 0\n}"
+				}
+			]
+		},
+		{
+			"name": "Delete Movie",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2NjM1NWE0OTMxYzAxODAxNDQwZDI0ZTIiLCJpYXQiOjE3MTQ4MDc0OTQsImV4cCI6MTcxNDgxMjg5NCwidHlwZSI6ImFjY2VzcyJ9.JxiiDrc6a9mzpuM_dSgdybHFlE2Lh5X4Zfv6OHegptE",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/movies/6632b8bf682582a09785b374",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"movies",
+						"6632b8bf682582a09785b374"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search Movie By Title",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/movies/search/?title=Horror Movie It is 2",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"movies",
+						"search",
+						""
+					],
+					"query": [
+						{
+							"key": "title",
+							"value": "Horror Movie It is 2"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Search Movie By Title",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/movies/search/?title=Horror Movie It is 2",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"movies",
+								"search",
+								""
+							],
+							"query": [
+								{
+									"key": "title",
+									"value": "Horror Movie It is 2"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Security-Policy",
+							"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Resource-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Origin-Agent-Cluster",
+							"value": "?1"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "no-referrer"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=15552000; includeSubDomains"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-DNS-Prefetch-Control",
+							"value": "off"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "255"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"ff-Jf7jmtP8/QR286mF5cV2lIsuRm0\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 01 May 2024 21:56:02 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"_id\": \"6632ba5d6df34bf42cbe6a29\",\n    \"name\": \"Horror Movie It is 2\",\n    \"genere\": \"Horror\",\n    \"rating\": 9,\n    \"photoPath\": \"photoPath-1714600541786.jpeg\",\n    \"description\": \"Very Scary Movie\",\n    \"createdAt\": \"2024-05-01T21:55:41.925Z\",\n    \"updatedAt\": \"2024-05-01T21:55:41.925Z\",\n    \"__v\": 0\n}"
+				}
+			]
+		},
+		{
+			"name": "Add Review to Movie",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Response status code is 201\", function () {",
+							"  pm.response.to.have.status(201);",
+							"});",
+							"",
+							"",
+							"pm.test(\"Stars is a non-negative integer\", function () {",
+							"  const responseData = pm.response.json();",
+							"",
+							"  pm.expect(responseData.stars).to.exist.and.to.be.a('number');",
+							"  pm.expect(responseData.stars).to.satisfy((stars) => stars >= 0, \"Stars should be a non-negative integer\");",
+							"});",
+							"",
+							"",
+							"pm.test(\"User is a non-empty string\", function () {",
+							"    const responseData = pm.response.json();",
+							"",
+							"    pm.expect(responseData.user).to.be.a('string').and.to.have.lengthOf.at.least(1, \"User should not be empty\");",
+							"});",
+							"",
+							"",
+							"pm.test(\"Movie is a non-empty string\", function () {",
+							"  const responseData = pm.response.json();",
+							"  ",
+							"  pm.expect(responseData.movie).to.exist.and.to.be.a('string').and.to.have.lengthOf.at.least(1, \"Value should not be empty\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2NjM1NWE0OTMxYzAxODAxNDQwZDI0ZTIiLCJpYXQiOjE3MTQ4MDc0OTQsImV4cCI6MTcxNDgxMjg5NCwidHlwZSI6ImFjY2VzcyJ9.JxiiDrc6a9mzpuM_dSgdybHFlE2Lh5X4Zfv6OHegptE",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "stars",
+							"value": "3",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "very good movie 4",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/reviews/?movieId=6632ba5d6df34bf42cbe6a29",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"reviews",
+						""
+					],
+					"query": [
+						{
+							"key": "movieId",
+							"value": "6632ba5d6df34bf42cbe6a29"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Add Review to Movie",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "stars",
+									"value": "5",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "very good movie",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/reviews/?movieId=6632bb285b6050d1fdbfed4e",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"reviews",
+								""
+							],
+							"query": [
+								{
+									"key": "movieId",
+									"value": "6632bb285b6050d1fdbfed4e"
+								}
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Security-Policy",
+							"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Resource-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Origin-Agent-Cluster",
+							"value": "?1"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "no-referrer"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=15552000; includeSubDomains"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-DNS-Prefetch-Control",
+							"value": "off"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "231"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"e7-e4Z6bJshskgK2YWBURlsGlAXiy0\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 01 May 2024 22:31:40 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"description\": \"very good movie\",\n    \"stars\": 5,\n    \"user\": \"6632917b908871183c907207\",\n    \"movie\": \"6632bb285b6050d1fdbfed4e\",\n    \"_id\": \"6632c2ccb0dc56f3e0817b01\",\n    \"createdAt\": \"2024-05-01T22:31:40.579Z\",\n    \"updatedAt\": \"2024-05-01T22:31:40.579Z\",\n    \"__v\": 0\n}"
+				}
+			]
+		},
+		{
+			"name": "Delete Review",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2NjM1NWE0OTMxYzAxODAxNDQwZDI0ZTIiLCJpYXQiOjE3MTQ4MDc0OTQsImV4cCI6MTcxNDgxMjg5NCwidHlwZSI6ImFjY2VzcyJ9.JxiiDrc6a9mzpuM_dSgdybHFlE2Lh5X4Zfv6OHegptE",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/reviews/6632c2ccb0dc56f3e0817b01",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"reviews",
+						"6632c2ccb0dc56f3e0817b01"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Review By Movie",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Response status code is 200\", function () {",
+							"  pm.expect(pm.response.code).to.equal(200);",
+							"});",
+							"",
+							"",
+							"pm.test(\"Response has the required fields\", function () {",
+							"  const responseData = pm.response.json();",
+							"",
+							"  pm.expect(responseData).to.be.an('object');",
+							"  pm.expect(responseData.results).to.exist;",
+							"  pm.expect(responseData.page).to.exist;",
+							"  pm.expect(responseData.limit).to.exist;",
+							"  pm.expect(responseData.totalPages).to.exist;",
+							"  pm.expect(responseData.totalResults).to.exist;",
+							"});",
+							"",
+							"",
+							"pm.test(\"Results is an array\", function () {",
+							"  const responseData = pm.response.json();",
+							"  ",
+							"  pm.expect(responseData.results).to.be.an('array');",
+							"});",
+							"",
+							"",
+							"pm.test(\"Page is a non-negative integer\", function () {",
+							"    const responseData = pm.response.json();",
+							"",
+							"    pm.expect(responseData.page).to.be.a('number').and.to.be.at.least(0);",
+							"});",
+							"",
+							"pm.test(\"Limit is a non-negative integer\", function () {",
+							"    const responseData = pm.response.json();",
+							"",
+							"    pm.expect(responseData.limit).to.be.a('number').and.to.be.at.least(0);",
+							"});",
+							"",
+							"pm.test(\"Response time is less than 500ms\", function () {",
+							"  pm.expect(pm.response.responseTime).to.be.below(500);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/reviews/movie/?movieId=6632bb285b6050d1fdbfed4e",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"reviews",
+						"movie",
+						""
+					],
+					"query": [
+						{
+							"key": "movieId",
+							"value": "6632bb285b6050d1fdbfed4e"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get Review By Movie",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/reviews/movie/?movieId=6632bb285b6050d1fdbfed4e",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"reviews",
+								"movie",
+								""
+							],
+							"query": [
+								{
+									"key": "movieId",
+									"value": "6632bb285b6050d1fdbfed4e"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Security-Policy",
+							"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Resource-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Origin-Agent-Cluster",
+							"value": "?1"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "no-referrer"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=15552000; includeSubDomains"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-DNS-Prefetch-Control",
+							"value": "off"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "533"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"215-FCnMwyDHgq4Bl1YnZpgv+u6qVmo\""
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "connect.sid=s%3ABUxU-LYLBUtFVCuuMK4u7ZrgmmQB83nN.BfobEqBnWJBFfbLniLTBbPQDGeWF%2Bm9dDWrk24CSgaE; Path=/; Expires=Wed, 01 May 2024 23:40:03 GMT; HttpOnly"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 01 May 2024 22:40:03 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"results\": [\n        {\n            \"_id\": \"6632c3dae9c387492e3d96b6\",\n            \"description\": \"very good movie 2\",\n            \"stars\": 5,\n            \"user\": \"6632917b908871183c907207\",\n            \"movie\": \"6632bb285b6050d1fdbfed4e\",\n            \"createdAt\": \"2024-05-01T22:36:10.906Z\",\n            \"updatedAt\": \"2024-05-01T22:36:10.906Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"6632c327b0dc56f3e0817b07\",\n            \"description\": \"very good movie\",\n            \"stars\": 5,\n            \"user\": \"6632917b908871183c907207\",\n            \"movie\": \"6632bb285b6050d1fdbfed4e\",\n            \"createdAt\": \"2024-05-01T22:33:11.890Z\",\n            \"updatedAt\": \"2024-05-01T22:33:11.890Z\",\n            \"__v\": 0\n        }\n    ],\n    \"page\": 1,\n    \"limit\": 5000,\n    \"totalPages\": 1,\n    \"totalResults\": 2\n}"
+				}
+			]
+		},
+		{
+			"name": "Get Review By Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/reviews/6632c3dae9c387492e3d96b6",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"reviews",
+						"6632c3dae9c387492e3d96b6"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get Review By Id",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/reviews/6632c3dae9c387492e3d96b6",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"reviews",
+								"6632c3dae9c387492e3d96b6"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Security-Policy",
+							"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Resource-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Origin-Agent-Cluster",
+							"value": "?1"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "no-referrer"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=15552000; includeSubDomains"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-DNS-Prefetch-Control",
+							"value": "off"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "233"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"e9-BrMv2nr2lXK/uDfcbYkjPFD89qc\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 01 May 2024 22:41:09 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"_id\": \"6632c3dae9c387492e3d96b6\",\n    \"description\": \"very good movie 2\",\n    \"stars\": 5,\n    \"user\": \"6632917b908871183c907207\",\n    \"movie\": \"6632bb285b6050d1fdbfed4e\",\n    \"createdAt\": \"2024-05-01T22:36:10.906Z\",\n    \"updatedAt\": \"2024-05-01T22:36:10.906Z\",\n    \"__v\": 0\n}"
+				}
+			]
+		},
+		{
+			"name": "Update Review",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2NjM1NWE0OTMxYzAxODAxNDQwZDI0ZTIiLCJpYXQiOjE3MTQ4MDc0OTQsImV4cCI6MTcxNDgxMjg5NCwidHlwZSI6ImFjY2VzcyJ9.JxiiDrc6a9mzpuM_dSgdybHFlE2Lh5X4Zfv6OHegptE",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "description",
+							"value": "not good movie",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/reviews/6632c3dae9c387492e3d96b6",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"reviews",
+						"6632c3dae9c387492e3d96b6"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Update Review",
+					"originalRequest": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "description",
+									"value": "not good movie",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/reviews/6632c3dae9c387492e3d96b6",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"reviews",
+								"6632c3dae9c387492e3d96b6"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Security-Policy",
+							"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Resource-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Origin-Agent-Cluster",
+							"value": "?1"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "no-referrer"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=15552000; includeSubDomains"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-DNS-Prefetch-Control",
+							"value": "off"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "230"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"e6-cLugFqbLO2YYWwYLeJAs9M9QYWE\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 01 May 2024 22:43:53 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"_id\": \"6632c3dae9c387492e3d96b6\",\n    \"description\": \"not good movie\",\n    \"stars\": 5,\n    \"user\": \"6632917b908871183c907207\",\n    \"movie\": \"6632bb285b6050d1fdbfed4e\",\n    \"createdAt\": \"2024-05-01T22:36:10.906Z\",\n    \"updatedAt\": \"2024-05-01T22:43:53.553Z\",\n    \"__v\": 0\n}"
+				}
+			]
+		},
+		{
+			"name": "Get All Reviews",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Response status code is 200\", function () {",
+							"  pm.expect(pm.response.code).to.equal(200);",
+							"});",
+							"",
+							"",
+							"pm.test(\"Validate the 'results' array is present and not empty\", function () {",
+							"    const responseData = pm.response.json();",
+							"    ",
+							"    pm.expect(responseData.results).to.exist.and.to.be.an('array').and.to.have.lengthOf.at.least(1, \"Array should not be empty\");",
+							"});",
+							"",
+							"",
+							"pm.test(\"Stars value is a number between 1 and 5\", function () {",
+							"    const responseData = pm.response.json();",
+							"",
+							"    pm.expect(responseData.results).to.be.an('array');",
+							"    responseData.results.forEach(function (review) {",
+							"        pm.expect(review.stars).to.be.a('number');",
+							"        pm.expect(review.stars).to.be.within(1, 5);",
+							"    });",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/reviews",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"reviews"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get All Reviews",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/reviews",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"reviews"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Security-Policy",
+							"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Resource-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Origin-Agent-Cluster",
+							"value": "?1"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "no-referrer"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=15552000; includeSubDomains"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-DNS-Prefetch-Control",
+							"value": "off"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "530"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"212-LtcUdogofj8wIqtZngGvEJfwW8U\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 01 May 2024 22:45:17 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"results\": [\n        {\n            \"_id\": \"6632c3dae9c387492e3d96b6\",\n            \"description\": \"not good movie\",\n            \"stars\": 5,\n            \"user\": \"6632917b908871183c907207\",\n            \"movie\": \"6632bb285b6050d1fdbfed4e\",\n            \"createdAt\": \"2024-05-01T22:36:10.906Z\",\n            \"updatedAt\": \"2024-05-01T22:43:53.553Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"6632c327b0dc56f3e0817b07\",\n            \"description\": \"very good movie\",\n            \"stars\": 5,\n            \"user\": \"6632917b908871183c907207\",\n            \"movie\": \"6632bb285b6050d1fdbfed4e\",\n            \"createdAt\": \"2024-05-01T22:33:11.890Z\",\n            \"updatedAt\": \"2024-05-01T22:33:11.890Z\",\n            \"__v\": 0\n        }\n    ],\n    \"page\": 1,\n    \"limit\": 5000,\n    \"totalPages\": 1,\n    \"totalResults\": 2\n}"
+				}
+			]
+		},
+		{
+			"name": "Get Reviews By User",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Response status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"",
+							"pm.test(\"Verify that the response is in JSON format\", function () {",
+							"    pm.expect(pm.response.headers.get(\"Content-Type\")).to.include(\"application/json\");",
+							"});",
+							"",
+							"",
+							"pm.test(\"The 'description' field is a non-empty string\", function () {",
+							"    const responseData = pm.response.json();",
+							"",
+							"    pm.expect(responseData).to.be.an('array');",
+							"",
+							"    responseData.forEach(function(review) {",
+							"        pm.expect(review.description).to.be.a('string').and.to.have.lengthOf.at.least(1, \"Value should not be empty\");",
+							"    });",
+							"});",
+							"",
+							"",
+							"pm.test(\"Verify that the 'stars' field is a number between 1 and 5\", function () {",
+							"    const responseData = pm.response.json();",
+							"",
+							"    pm.expect(responseData).to.be.an('array').that.is.not.empty;",
+							"",
+							"    responseData.forEach(function (review) {",
+							"        pm.expect(review.stars).to.be.a('number');",
+							"        pm.expect(review.stars).to.be.within(1, 5);",
+							"    });",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2NjM1NWE0OTMxYzAxODAxNDQwZDI0ZTIiLCJpYXQiOjE3MTQ4MDc0OTQsImV4cCI6MTcxNDgxMjg5NCwidHlwZSI6ImFjY2VzcyJ9.JxiiDrc6a9mzpuM_dSgdybHFlE2Lh5X4Zfv6OHegptE",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/reviews/user",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"reviews",
+						"user"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get Reviews By User",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/reviews/user",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"reviews",
+								"user"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Security-Policy",
+							"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Resource-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Origin-Agent-Cluster",
+							"value": "?1"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "no-referrer"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=15552000; includeSubDomains"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-DNS-Prefetch-Control",
+							"value": "off"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "464"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1d0-qG0HHJIEKVyMD4cbFbv/QnTqvd4\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 01 May 2024 22:47:00 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"_id\": \"6632c327b0dc56f3e0817b07\",\n        \"description\": \"very good movie\",\n        \"stars\": 5,\n        \"user\": \"6632917b908871183c907207\",\n        \"movie\": \"6632bb285b6050d1fdbfed4e\",\n        \"createdAt\": \"2024-05-01T22:33:11.890Z\",\n        \"updatedAt\": \"2024-05-01T22:33:11.890Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"6632c3dae9c387492e3d96b6\",\n        \"description\": \"not good movie\",\n        \"stars\": 5,\n        \"user\": \"6632917b908871183c907207\",\n        \"movie\": \"6632bb285b6050d1fdbfed4e\",\n        \"createdAt\": \"2024-05-01T22:36:10.906Z\",\n        \"updatedAt\": \"2024-05-01T22:43:53.553Z\",\n        \"__v\": 0\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Get Movie By Respective User",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Response status code is 200\", function () {",
+							"  pm.response.to.have.status(200);",
+							"});",
+							"",
+							"",
+							"pm.test(\"Response is in JSON format\", function () {",
+							"    pm.expect(pm.response.headers.get(\"Content-Type\")).to.include(\"application/json\");",
+							"});",
+							"",
+							"",
+							"pm.test(\"Verify that the response contains an array of movies\", function () {",
+							"  const responseData = pm.response.json();",
+							"  ",
+							"  pm.expect(responseData).to.be.an('array');",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2NjM1NWE0OTMxYzAxODAxNDQwZDI0ZTIiLCJpYXQiOjE3MTQ4MDc0OTQsImV4cCI6MTcxNDgxMjg5NCwidHlwZSI6ImFjY2VzcyJ9.JxiiDrc6a9mzpuM_dSgdybHFlE2Lh5X4Zfv6OHegptE",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/movies/user",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"movies",
+						"user"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get Movie By Respective User",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/movies/user",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"movies",
+								"user"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Security-Policy",
+							"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Resource-Policy",
+							"value": "cross-origin"
+						},
+						{
+							"key": "Origin-Agent-Cluster",
+							"value": "?1"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "no-referrer"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=15552000; includeSubDomains"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-DNS-Prefetch-Control",
+							"value": "off"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "499"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1f3-2pAJ0hhnieZYNpoAxYRb+x2tfew\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 03 May 2024 12:45:13 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"_id\": \"6634d7e0a3949144434ceb08\",\n        \"name\": \"Spider Man\",\n        \"genere\": \"Suspense\",\n        \"rating\": 9,\n        \"photoPath\": \"C:\\\\fakepath\\\\spiderman.jpeg\",\n        \"description\": \"Super Hero Movie\",\n        \"createdAt\": \"2024-05-03T12:26:08.555Z\",\n        \"updatedAt\": \"2024-05-03T12:26:08.555Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"6634d98ca3949144434ceb22\",\n        \"name\": \"Spider Man 2\",\n        \"genere\": \"Suspense\",\n        \"rating\": 9,\n        \"photoPath\": \"photoPath-1714739596353.jpeg\",\n        \"description\": \"Super Hero Movie\",\n        \"createdAt\": \"2024-05-03T12:33:16.420Z\",\n        \"updatedAt\": \"2024-05-03T12:33:16.420Z\",\n        \"__v\": 0\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "User - Movie Reviews",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Response status code is 200\", function () {",
+							"  pm.expect(pm.response.code).to.equal(200);",
+							"});",
+							"",
+							"",
+							"pm.test(\"Response is an array with at least one element\", function () {",
+							"    const responseData = pm.response.json();",
+							"    ",
+							"    pm.expect(responseData).to.be.an('array').and.to.have.lengthOf.at.least(1);",
+							"});",
+							"",
+							"",
+							"pm.test(\"Stars field is a non-negative integer\", function () {",
+							"    const responseData = pm.response.json();",
+							"    ",
+							"    responseData.forEach(function(review) {",
+							"        pm.expect(review.stars).to.be.a('number').and.to.be.at.least(0);",
+							"    });",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2NjM1NWE0OTMxYzAxODAxNDQwZDI0ZTIiLCJpYXQiOjE3MTQ4MDc0OTQsImV4cCI6MTcxNDgxMjg5NCwidHlwZSI6ImFjY2VzcyJ9.JxiiDrc6a9mzpuM_dSgdybHFlE2Lh5X4Zfv6OHegptE",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/reviews/user/movie/6632ba5d6df34bf42cbe6a29",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"reviews",
+						"user",
+						"movie",
+						"6632ba5d6df34bf42cbe6a29"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "User - Movie Reviews",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/reviews/user/movie/6632ba5d6df34bf42cbe6a29",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"reviews",
+								"user",
+								"movie",
+								"6632ba5d6df34bf42cbe6a29"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Security-Policy",
+							"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Resource-Policy",
+							"value": "cross-origin"
+						},
+						{
+							"key": "Origin-Agent-Cluster",
+							"value": "?1"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "no-referrer"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=15552000; includeSubDomains"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-DNS-Prefetch-Control",
+							"value": "off"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "482"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1e2-syVEcGfeF2E95i2RkBW6FGIg01M\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 03 May 2024 14:04:42 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"_id\": \"6634e99526fe38c91f692849\",\n        \"description\": \"Horror Movie It is 2 is  a very good movie\",\n        \"stars\": 1,\n        \"user\": \"6634cf9da3949144434cea77\",\n        \"movie\": \"6632ba5d6df34bf42cbe6a29\",\n        \"createdAt\": \"2024-05-03T13:41:41.687Z\",\n        \"updatedAt\": \"2024-05-03T13:41:41.687Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"6634ed7ffc6c29ddc5d1b4eb\",\n        \"description\": \"hello\",\n        \"stars\": 1,\n        \"user\": \"6634cf9da3949144434cea77\",\n        \"movie\": \"6632ba5d6df34bf42cbe6a29\",\n        \"createdAt\": \"2024-05-03T13:58:23.038Z\",\n        \"updatedAt\": \"2024-05-03T13:58:23.038Z\",\n        \"__v\": 0\n    }\n]"
+				}
+			]
+		}
+	]
+}
