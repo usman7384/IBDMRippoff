@@ -68,3 +68,13 @@ Postman collection has also been added to the backend folder
 
 The documentation includes details about each endpoint, request/response formats, authentication, and examples.
 
+## Docker
+
+In the root directory of the project run following command:
+
+```bash
+
+docker compose up
+
+```
+
