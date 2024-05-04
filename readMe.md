@@ -25,14 +25,31 @@ List the key features.
 
 ## Installation
 
-Provide instructions on how to install and set up your project locally. Include any prerequisites, such as Node.js and MongoDB.
-
 ```bash
 git clone 
 
 cd https://github.com/usman7384/IBDMRippoff.git
 
+
+
+```
+
+### frontend
+
+```bash
+
+cd frontend
+
+npm insall
+```
+
+### backend
+
+```bash
+cd backend
+
 npm install
+
 ```
 
 ## Usage
@@ -43,7 +60,9 @@ npm start
 
 ## API Documentation
 
-The API documentation for this project can be found on Postman:
+The API documentation/est cases for this project can be found on Postman:
+
+Postman collection has also been added to the backend folder
 
 [Postman Documentation](https://documenter.getpostman.com/view/31616266/2sA3JGeNuZ)
 
