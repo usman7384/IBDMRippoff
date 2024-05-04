@@ -11,6 +11,7 @@ IMDB Ripp off
 - [API Documentation](#api-documentation)
 
 
+
 ## Introduction
 
 A Movie Web App

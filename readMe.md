@@ -9,6 +9,7 @@ IMDB Ripp off
 - [Installation](#installation)
 - [Usage](#usage)
 - [API Documentation](#api-documentation)
+- [Docker](#docker)
 
 
 ## Introduction
