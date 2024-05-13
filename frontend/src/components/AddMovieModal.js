@@ -3,22 +3,27 @@ import movieService from "../services/movieServices";
 import Notification from './Notification';
 
 const AddMovie = () => {
-  const [formData, setFormData] = useState({
+  const initialFormData = {
     name: "",
     genere: "",
     rating: "",
     description: "",
-  });
+    photoPath: "",
+  };
 
+  const [formData, setFormData] = useState(initialFormData);
   const [error, setError] = useState(null); 
   const [errorCount, setErrorCount] = useState(0); 
   const [success, setSuccess] = useState(null); 
   const [successCount, setSuccessCount] = useState(0); 
   const [file, setFile] = useState(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
 
   const handleFileChange = (e) => {
     setFile(e.target.files[0]);
   };
+
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setFormData((prevData) => ({
@@ -34,21 +39,30 @@ const AddMovie = () => {
     formDataToSend.append("genere", formData.genere);
     formDataToSend.append("rating", formData.rating);
     formDataToSend.append("description", formData.description);
-    if (file) {
-      formDataToSend.append("photoPath", file);
-    }
+    formDataToSend.append("photoPath", formData.photoPath);
+
+    // if (file) {
+    //   formDataToSend.append("photoPath", file);
+    // }
 
     try {
       await movieService.addNewMovie(formDataToSend);
       console.log("Movie added successfully");
       setSuccess("Movie Added")
       setSuccessCount(prevCount => prevCount + 1)
+      setIsModalOpen(false); 
+      setFormData(initialFormData);
     } catch (error) {
       console.error("Movie add failed:", error.message);
       setError(`Failed Adding Movie : ${error.message}`); 
       setErrorCount(prevCount => prevCount + 1); 
-
     }
+  };
+
+  const handleModalClose = () => {
+    setIsModalOpen(false);
+    document.getElementById("movieForm").reset();
+
   };
 
   return (
@@ -61,7 +75,7 @@ const AddMovie = () => {
         <div className="modal-box w-11/12 max-w-5xl">
           <h3 className="font-bold text-lg">Add A New Movie</h3>
 
-          <form className="space-y-4" onSubmit={handleFormSubmit} method="dialog">
+          <form className="space-y-4" onSubmit={handleFormSubmit} method="dialog" id="movieForm">
             <div>
               <input
                 type="text"
@@ -100,13 +114,22 @@ const AddMovie = () => {
             </div>
             <div>
               <input
+                type="text"
+                onChange={handleInputChange}
+                placeholder="Photo add link to photo"
+                name="photoPath"
+                className="input input-bordered w-full "
+              />
+            </div>
+            {/* <div>
+              <input
                 type="file"
                 onChange={handleFileChange}
                 placeholder="Photo"
                 name="photoPath"
                 className="file-input file-input-bordered w-full max-w-xs"
               />
-            </div>
+            </div> */}
             <div>
               
               <button type="submit" className="btn btn-block btn-primary">
@@ -116,8 +139,8 @@ const AddMovie = () => {
           </form>
 
           <div className="modal-action">
-            <form method="dialog">
-              <button className="btn">Close</button>
+            <form method="dialog" onSubmit={handleModalClose}>
+              <button className="btn" >Close</button>
             </form>
           </div>
         </div>
@@ -127,3 +150,5 @@ const AddMovie = () => {
 };
 
 export default AddMovie;
+
+

@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const MovieCard = ({ movie }) => {
     return (
         <div className="w-full md:w-1/2 card card-side bg-base-100 shadow-xl">
-  <figure><img src={`${API_STATIC_URL}/${movie.photoPath}`} className="w-[300px] h-[250px]" alt="Movie"/></figure>
+  <figure><img src={`${movie.photoPath}`} className="w-[300px] h-[250px]" alt="Movie"/></figure>
   <div className="card-body">
     <Link to={`/movie/${movie._id}`}>
     <h2 className="card-title">{movie.name}</h2>

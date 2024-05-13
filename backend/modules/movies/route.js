@@ -9,7 +9,7 @@ const router = express.Router();
 
 router
   .route('/')
-  .post(auth(), fileUpload.array("photoPath"),
+  .post(auth(),
     validate(validation.add),
     controller.addNewMovie
   )
@@ -28,8 +28,8 @@ router
 router
   .route('/:movieId')
   .get(validate(validation.getMovie), controller.getMovie)
-  .patch(auth(), fileUpload.array("photoPath"),validate(validation.updateMovie), controller.updateMovie)
-  .delete(auth(), fileUpload.array("photoPath"),validate(validation.deleteMovie), controller.deleteMovie);
+  .patch(auth(), validate(validation.updateMovie), controller.updateMovie)
+  .delete(auth(), validate(validation.deleteMovie), controller.deleteMovie);
 
 
  

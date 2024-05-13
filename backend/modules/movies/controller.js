@@ -7,9 +7,9 @@ const Movie = require('./model');
 
 
 const addNewMovie = catchAsync(async (req, res) => {
-  let createBody = req.body;
-  if(req.files && req.files[0]){
-    createBody.photoPath = req.files[0].filename;}
+  // let createBody = req.body;
+  // if(req.files && req.files[0]){
+  //   createBody.photoPath = req.files[0].filename;}
   const movie = await movieService.create(req.body, req.user);
   res.status(httpStatus.CREATED).send(movie);
 }
@@ -43,9 +43,9 @@ const searchMovieByTitle = catchAsync(async (req, res) => {
 );
 
 const updateMovie = catchAsync(async (req, res) => {
-  let createBody = req.body;
-  if(req.files && req.files[0]){
-    createBody.photoPath = req.files[0].filename;}
+  // let createBody = req.body;
+  // if(req.files && req.files[0]){
+  //   createBody.photoPath = req.files[0].filename;}
   const movie = await movieService.updateMovie(req.params.movieId, req.body, req.user);
   res.send(movie);
 }

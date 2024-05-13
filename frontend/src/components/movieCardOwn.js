@@ -5,6 +5,7 @@ import movieService from "../services/movieServices";
 
 const OwnMovieCard = ({ movie }) => {
 
+  console.log("movie2",movie)
     const deleteMovie = async (id) => {
         try {
             const response = await movieService.deleteMovie(id)
@@ -23,7 +24,7 @@ const OwnMovieCard = ({ movie }) => {
 
     return (
         <div className="w-full md:w-1/2 card card-side bg-base-100 shadow-xl">
-  <figure><img src={`${API_STATIC_URL}/${movie.movie.photoPath}`} alt="Movie" className="w-[250px]"/></figure>
+  <figure><img src={`${movie.movie.photoPath}`} className="w-[300px] h-[250px]" alt="Movie"/></figure>
   <div className="card-body">
     <Link to={`/movie/${movie.movie._id}`}>
     <h2 className="card-title">{movie.movie.name}</h2>

@@ -39,7 +39,7 @@ const Hero = () => {
       </div>
       <div className="md:absolute bottom-0 right-0 flex  flex-col  shadow-lg bg-white/70 p-4 rounded-lg h-1/2 md:h-full text-black">
         <img
-          src={`${API_STATIC_URL}/${movie.photoPath}`}
+          src={`${movie.photoPath}`}
           className="w-full rounded-lg shadow-2xl h-[300px]"
           alt=""
         />

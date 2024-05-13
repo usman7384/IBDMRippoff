@@ -53,6 +53,10 @@ npm install
 
 ```
 
+### .envs
+
+env files for backend and frontend are there in the respoective directories. Just adjust the varibales accoudingly.
+
 ## Usage
 
 ```bash

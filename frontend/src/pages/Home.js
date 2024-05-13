@@ -63,7 +63,7 @@ const Home = () => {
         <TopRated movie={topRated} />
       </section>
       <section className="text-center md:text-left">
-        {(movies && movies.length === 0) ? <div><h2 className="text-3xl font-bold m-4">No Movies Found</h2><p>Login to add new movie</p></div>
+        {(movies && movies.length === 0) ? <div><h2 className="text-3xl font-bold m-4">No Movies Found</h2></div>
         :
         <div>        <h2 className="text-3xl font-bold m-4">All Movies</h2>
 
