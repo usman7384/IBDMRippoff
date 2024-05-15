@@ -1,6 +1,7 @@
 import { API_STATIC_URL } from "../services/apiConfig";
 import ReviewModal from "./ReviewModal";
 import { Link } from "react-router-dom";
+import React from 'react';
 
 const MovieCard = ({ movie }) => {
     return (

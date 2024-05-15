@@ -2,6 +2,7 @@ import { API_STATIC_URL } from "../services/apiConfig";
 import ReviewModal from "./ReviewModal";
 import { Link } from "react-router-dom";
 import movieService from "../services/movieServices";
+import React from 'react';
 
 const OwnMovieCard = ({ movie }) => {
 

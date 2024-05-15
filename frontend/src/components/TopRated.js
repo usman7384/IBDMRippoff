@@ -1,5 +1,7 @@
 import { API_STATIC_URL } from "../services/apiConfig";
 import ReviewModal from "./ReviewModal";
+import React from 'react';
+
 
 const TopRated = ({ movie }) => {
   return (

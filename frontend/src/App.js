@@ -10,6 +10,8 @@ import AddMovie from "./components/AddMovieModal";
 import "./App.css";
 import PrivateRoute from "./Routes/ProtectedRoutes";
 import PublicRoute from "./Routes/PublicRoute";
+import React from 'react';
+
 function App() {
 
   return (

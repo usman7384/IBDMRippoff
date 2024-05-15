@@ -1,3 +1,5 @@
+import React from 'react';
+
 const ReviewModal = ({ id, reviews }) => {
   return (
     <div>

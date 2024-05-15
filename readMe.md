@@ -62,7 +62,11 @@ env files for backend and frontend are there in the respoective directories. Jus
 ```bash
 npm start
 ```
-
+### Run Tests
+Start the server in a seperate server and then run the following command
+```bash
+npm test
+```
 ## API Documentation
 
 The API documentation/est cases for this project can be found on Postman:

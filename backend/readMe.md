@@ -42,6 +42,13 @@ npm install
 npm start
 ```
 
+### Run Tests
+Start the server in a seperate server and then run the following command
+```bash
+npm test
+```
+
+
 ## API Documentation
 
 The API documentation for this project can be found on Postman:

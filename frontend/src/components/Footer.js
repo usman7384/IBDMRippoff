@@ -1,3 +1,5 @@
+import React from 'react';
+
 const Footer = () => {
   return (
     <div className="mx-8 md:mx-16">

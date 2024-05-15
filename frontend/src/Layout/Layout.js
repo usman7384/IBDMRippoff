@@ -1,6 +1,8 @@
 import { Outlet, Link } from "react-router-dom";
 import { useAuth } from "../context/AuthContext";
 import Footer from "../components/Footer";
+import React from 'react';
+
 
 const Layout = () => {
   const { isLoggedIn, logout } = useAuth();

@@ -3,6 +3,7 @@ import ReviewModal from "./ReviewModal";
 import { useState,useEffect } from "react";
 import movieService from "../services/movieServices";
 import { useParams } from 'react-router-dom';
+import React from 'react';
 
 const Hero = () => {
   const { id } = useParams();

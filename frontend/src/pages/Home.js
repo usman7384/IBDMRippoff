@@ -1,6 +1,7 @@
 import MovieCard from "../components/movieCard";
 import TopRated from "../components/TopRated";
 import React from "react";
+
 import movieService from "../services/movieServices";
 import { useEffect } from "react";
 const Home = () => {
